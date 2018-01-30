@@ -121,4 +121,4 @@ m<-gam(sst_pH_S~s(age,k=20),data=dat)
 dat$sst_pH_S_gam<-predict(m,dat)
 points(dat$age,dat$sst_pH_S_gam,type="l",col=adjustcolor("black",alpha=0.9),lwd=1.25)
 
-legend('topright', lty=c(2,1,1,1,1), col=c('grey27','grey47','blue3', 'red3', 'black' ), c('Dekens02/Anand03','no salinity + no pH', 'salinity + no pH', 'no salinity + pH', 'salinity + pH'), bty='n')
+legend('topright', lty=c(2,1,1,1,1), col=c('grey27','grey47','blue3', 'red3', 'black' ), c('Dekens 2002/Anand 2003','Gray 2018 - constant salinity + constant pH', 'Gray 2018 - varying salinity + constant pH', 'Gray 2018 - constant salinity + varying pH', 'Gray 2018 - varying salinity + varying pH'), bty='n')
